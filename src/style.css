@@ -29,7 +29,6 @@
 
 .navbar-item:nth-child(2) {
     display: none;
-    
 }
 
 .navbar-item ul {
@@ -48,7 +47,12 @@
     text-decoration: none;
     color: #766F68;
     padding-right: 20px;
-}   
+}
+
+.navbar-item a:hover {
+    color: #D2872C;
+    transition: 0.3s;
+}
 
 .navbar-item:nth-child(3) a {
     display: block;
@@ -77,5 +81,121 @@
 
     .navbar-item:nth-child(3) {
         display: none;
+    }
+}
+
+
+/*Main Styles*/
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    margin: 24px 32px;
+}
+
+.main-item {
+    display: flex;
+}
+
+.main-item:nth-child(1) {
+    order: 1;
+    justify-content: flex-end;
+}
+
+.main-item:nth-child(2) {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-item h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #5c5c5c;
+    text-decoration: none;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.main-item p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #898989;
+    text-decoration: none;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.main-item a {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+}
+
+.main-item button {
+    height: 50px;
+    width: 225px;
+    border: none;
+    border-radius: 15px;
+    background-color: #D2872C;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-item button:hover {
+    background-color: #ffa537;
+    color: #5c5c5c;
+    transition: 0.3s;
+}
+
+.main-item img {
+    height: 90%;
+    width: 90%;
+}
+
+@media screen and (min-width: 700px) {
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-item {
+        margin: 25px;
+    }
+
+    .main-item:nth-child(2) {
+        align-items: flex-start;
+    }
+
+    .main-item:nth-child(1) {
+        order: 2;
+    }
+    
+    .main-item:nth-child(2) {
+        order: 1;
+        margin: 70px 150px;
+    }
+
+    .main-item img {
+        height: 75%;
+        width: 75%;
+    }
+
+    .main-item h2 {
+        font-size: 36px;
+    }
+    
+    .main-item p {
+        font-size: 22px;
     }
 }
